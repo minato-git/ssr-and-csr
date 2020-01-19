@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/components/description/description.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/description/description.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/info/info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/info/info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/home/left-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/pdp/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/pdp/pdp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/ratingStar/rating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/ratingStar/ratingStar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/news/NewsList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/news/NewsList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/description/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/description/description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/info/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/info/info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/info/info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +69,7 @@
       <workItem from="1579404927687" duration="35000" />
       <workItem from="1579414210100" duration="4495000" />
       <workItem from="1579420629514" duration="40000" />
-      <workItem from="1579420733571" duration="4814000" />
+      <workItem from="1579420733571" duration="7649000" />
     </task>
     <servers />
   </component>
