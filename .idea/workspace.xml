@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/components/ratingStar/rating.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/ratingStar/ratingStar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/description/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/description/description.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/info/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/info/info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/info/info.js" afterDir="false" />
-    </list>
+    <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +62,7 @@
       <workItem from="1579404927687" duration="35000" />
       <workItem from="1579414210100" duration="4495000" />
       <workItem from="1579420629514" duration="40000" />
-      <workItem from="1579420733571" duration="7649000" />
+      <workItem from="1579420733571" duration="7897000" />
     </task>
     <servers />
   </component>
