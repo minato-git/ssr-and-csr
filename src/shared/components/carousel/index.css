@@ -1,0 +1,28 @@
+.img-cntr{
+    position: relative;
+    transition: 2s;
+    display: flex;
+}
+.img-wrap{
+    overflow: hidden;
+}
+.Carousel-panel{
+    margin: auto;
+    max-width: 750px;
+}
+.paginator{
+    text-align: center;
+}
+.dot:before {
+    content:"\A";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: grey;
+    display:inline-block;
+    margin:0 10px;
+
+}
+.dot.active:before{
+    background:black;
+}
