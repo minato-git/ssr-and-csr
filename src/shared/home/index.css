@@ -1,40 +1,43 @@
 .home {
-  font-family: "Avenir Light", Helvetica, Arial, sans-serif;
+  top: 32px;
+  font-family: 'Avenir Light', Helvetica, Arial, sans-serif;
   background-color: #f6f6ef;
+  position: relative;
+  bottom: 32px;
 }
 
-.home::after {
-  display: block;
-  content: "";
-  clear: both;
-}
+/*.home::after {*/
+/*  display: block;*/
+/*  content: "";*/
+/*  clear: both;*/
+/*}*/
 
-.selected {
-  font-weight: bold;
-}
+/*.selected {*/
+/*  font-weight: bold;*/
+/*}*/
 
-header {
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-}
+/*header {*/
+/*  width: 100%;*/
+/*  text-align: center;*/
+/*  padding: 20px;*/
+/*}*/
 
-aside {
-  display: block;
-  position: absolute;
-  text-align: right;
-  width: 8%;
-  margin-left: -6%;
-  color: #999;
-}
+/*aside {*/
+/*  display: block;*/
+/*  position: absolute;*/
+/*  text-align: right;*/
+/*  width: 8%;*/
+/*  margin-left: -6%;*/
+/*  color: #999;*/
+/*}*/
 
-article {
-  float: left;
-  padding: 0 0 0 52px;
-  width: 35%;
-}
+/*article {*/
+/*  float: left;*/
+/*  padding: 0 0 0 52px;*/
+/*  width: 35%;*/
+/*}*/
 
-figure {
-  float: right;
-  width: 48.5%;
-}
+/*figure {*/
+/*  float: right;*/
+/*  width: 48.5%;*/
+/*}*/

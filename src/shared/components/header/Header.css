@@ -1,0 +1,11 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  justify-content: start;
+  padding: 20px 10px;
+  background: dimgrey;
+  color: aliceblue;
+  z-index: 2;
+}

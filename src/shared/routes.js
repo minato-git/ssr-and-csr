@@ -1,4 +1,5 @@
 import Home from "./home";
+import PDP from "./pdp";
 import News from "./news";
 
 const routes = [
@@ -10,6 +11,10 @@ const routes = [
   {
     path: "/news",
     component: News
+  },
+  {
+    path: "/pdp/:id?",
+    component: PDP
   }
 ];
 

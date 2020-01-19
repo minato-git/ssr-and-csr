@@ -1,0 +1,13 @@
+.pdp-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pdp-image {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
+
