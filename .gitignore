@@ -1,6 +1,6 @@
+public
 node_modules
+.idea
 package-lock.json
 server.js
 server.js.map
-
-
