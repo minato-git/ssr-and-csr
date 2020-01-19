@@ -8,13 +8,19 @@ import {Constants} from "../constants";
 
 import "./index.css";
 
-
 class Home extends Component {
+  state={
+    products : Constants.products
+  }
+
+  onLoadMore = ()=>{
+    this.setState({products: this.state.products.concat(Constants.products)});
+  }
   render() {
     return (
       <div className="home">
         <Carousel imgs={Constants.imgUrls}/>
-        <ProdList products={Constants.products}/>
+        <ProdList products={this.state.products} onLoadMore={this.onLoadMore}/>
       </div>
     );
   }

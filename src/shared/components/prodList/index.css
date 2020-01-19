@@ -1,0 +1,7 @@
+.prod-list{
+    display:flex;
+    flex-wrap: wrap;
+}
+.prod-list-cntr .cta-more{
+    text-align: center;
+}
