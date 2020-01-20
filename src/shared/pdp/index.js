@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import './pdp.css';
-import Description from "../components/description/description";
-import {Constants} from "../constants";
+import Description from '../components/description/description';
+import { Constants } from '../constants';
 
-const PDP = ({ match }) => {
-  const [pdpInfo, setPdpInfo] = useState(Constants.pdpInfo);
+class PDP extends Component {
+  constructor() {
+    super();
+    this.state = {
+      pdpInfo: Constants.pdpInfo
+    };
+  }
 
-  return (
-    <div className={'pdp'}>
-      PDP page
-      {match.params.id}
-      {pdpInfo && <Description info={pdpInfo} />}
-    </div>
-  );
-};
+  static initiaize() {}
+
+  render() {
+    return (
+      <div className={'pdp'}>{this.state.pdpInfo && <Description info={this.state.pdpInfo} />}</div>
+    );
+  }
+}
 
 export default PDP;
