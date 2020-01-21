@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/components/prodTab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/prodTab/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/left-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/home/wizards.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/pdp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/pdp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +73,7 @@
       <workItem from="1579414210100" duration="4495000" />
       <workItem from="1579420629514" duration="40000" />
       <workItem from="1579420733571" duration="7897000" />
-      <workItem from="1579435611072" duration="28756000" />
+      <workItem from="1579435611072" duration="29092000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the config for the app">
       <created>1579523912387</created>

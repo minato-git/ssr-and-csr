@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel } from '../components/carousel';
 import { ProdList } from '../components/prodList';
-import { httpGetRequest } from '../../utils/utils';
-
 import './index.css';
 
 class Home extends Component {
@@ -23,26 +21,14 @@ class Home extends Component {
 
   componentDidMount() {
     if (!this.state.initialData) {
-      Home.requestInitialData().then(initialData => {
-        this.setState({ initialData });
+      Promise.all(
+        fetch('https://node-sample-api.herokuapp.com/api/home').then((data) => data.json()),
+        fetch('https://node-sample-api.herokuapp.com/api/products?page=1').then((data) => data.json())
+      ).then(([carouselData, productData]) => {
+        this.setState({initialData: {carouselData, productData}});
       });
     }
   }
-
-  static requestInitialData = () => {
-    return new Promise((resolve, reject) => {
-      Promise.all([
-        httpGetRequest('https://node-sample-api.herokuapp.com/api/home'),
-        httpGetRequest('https://node-sample-api.herokuapp.com/api/products?page=1')
-      ])
-        .then(([carouselData, productData]) => {
-          resolve({ carouselData, productData });
-        })
-        .catch(err => {
-          reject(err);
-        });
-    });
-  };
 
   onLoadMore = () => {
     let pageNo = this.state.page;

@@ -1,6 +1,6 @@
-const https = require('https');
+import https from 'https';
 
-const httpGetRequest = url => {
+export const httpGetRequest = url => {
   return new Promise((resolve, reject) => {
     https
       .get(url, res => {
@@ -22,6 +22,30 @@ const httpGetRequest = url => {
   });
 };
 
-module.exports = {
-  httpGetRequest
-};
+
+export const getPdpData = (id) => {
+  return new Promise((resolve, reject) => {
+    httpGetRequest(`https://node-sample-api.herokuapp.com/api/products/${id}`)
+      .then(res => {
+        resolve({pdpData: res});
+      })
+      .catch(err => {
+        reject(err);
+      });
+  });
+}
+
+export const getHomeData = () =>{
+  return new Promise((resolve, reject) => {
+    Promise.all([
+      httpGetRequest('https://node-sample-api.herokuapp.com/api/home'),
+      httpGetRequest('https://node-sample-api.herokuapp.com/api/products?page=1')
+    ])
+      .then(([carouselData, productData]) => {
+        resolve({ carouselData, productData });
+      })
+      .catch(err => {
+        reject(err);
+      });
+  });
+}

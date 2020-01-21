@@ -7,6 +7,7 @@ import routes from '../shared/routes';
 import App from '../shared/App';
 import compression from 'compression';
 import serialize from 'serialize-javascript';
+import {getHomeData, getPdpData} from './../utils/utils';
 
 const app = express();
 
@@ -14,11 +15,8 @@ app.use(compression({ filter: shouldCompress }));
 
 function shouldCompress(req, res) {
   if (req.headers['x-no-compression']) {
-    // don't compress responses with this request header
     return false;
   }
-
-  // fallback to standard filter function
   return compression.filter(req, res);
 }
 
@@ -52,45 +50,19 @@ const getMarkup = (url, context) => {
 };
 
 app.get('/', (req, res, next) => {
-  const activeRoute = routes.find(route => matchPath(req.url, route));
-
-  const requestInitialData =
-    activeRoute &&
-    activeRoute.component.requestInitialData &&
-    activeRoute.component.requestInitialData();
-
-  console.log('active', activeRoute);
-
-  Promise.resolve(requestInitialData)
-    .then(initialData => {
-      const context = { initialData };
-      // console.log('context', context);
-      const markup = getMarkup(req.url, context);
-      // console.log('markup ==> ', markup);
-      // console.log('template ==> ', getTemplate(markup));
-      res.send(getTemplate(markup, initialData));
-    })
-    .catch(next);
+  getHomeData().then((initialData) => {
+    const context = { initialData };
+    const markup = getMarkup(req.url, context);
+    res.send(getTemplate(markup, initialData));
+  }).catch(next);
 });
 
 app.get('/pdp/:id', (req, res, next) => {
-  const activeRoute = routes.find(route => matchPath(req.url, route));
-
-  const requestInitialData =
-    activeRoute &&
-    activeRoute.component.requestInitialData &&
-    activeRoute.component.requestInitialData(req.params.id);
-
-  console.log('active', activeRoute);
-
-  Promise.resolve(requestInitialData)
-    .then(initialData => {
-      const context = { initialData };
-      console.log('context', context);
-      const markup = getMarkup(req.url, context);
-      res.send(getTemplate(markup, initialData));
-    })
-    .catch(next);
+  getPdpData(req.params.id).then((initialData) => {
+    const context = { initialData };
+    const markup = getMarkup(req.url, context);
+    res.send(getTemplate(markup, initialData));
+  }).catch(next);
 });
 
 app.listen(process.env.PORT || 3000, () => {

@@ -2,6 +2,7 @@ const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const browserConfig = {
   entry: './src/browser/index.js',
@@ -55,7 +56,8 @@ const browserConfig = {
     }),
     new webpack.ProvidePlugin({
       React: 'react'
-    })
+    }),
+    new BundleAnalyzerPlugin()
   ],
   optimization: {
     minimize: true,
