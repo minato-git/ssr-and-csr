@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/browser/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/browser/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/prodTab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/prodTab/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/left-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/wizards.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/pdp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/pdp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +25,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1Wb4NNFDfxGP3ZZhFJIQMcDll59" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -28,6 +43,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
@@ -41,6 +57,11 @@
       <recent name="$PROJECT_DIR$/src/shared/components" />
       <recent name="$PROJECT_DIR$/src/shared" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/src/server/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -68,8 +89,16 @@
       <workItem from="1579414210100" duration="4495000" />
       <workItem from="1579420629514" duration="40000" />
       <workItem from="1579420733571" duration="7897000" />
-      <workItem from="1579435611072" duration="415000" />
+      <workItem from="1579435611072" duration="28756000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed the config for the app">
+      <created>1579523912387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579523912387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,20 +106,41 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fixed the config for the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the config for the app" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="329" y="52" key="CommitChangelistDialog2" timestamp="1579423934080">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579438887906">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="329" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579423934080" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1579438887906" />
+    <state x="329" y="52" key="CommitChangelistDialog2" timestamp="1579523912004">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="329" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579523912004" />
+    <state x="144" y="79" width="1152" height="720" key="DiffContextDialog" timestamp="1579607014056">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="144" y="79" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1579439081725" />
+    <state x="1632" y="95" width="1152" height="720" key="DiffContextDialog/0.23.1440.825/1440.23.1920.1057@1440.23.1920.1057" timestamp="1579505849526" />
+    <state x="144" y="79" width="1152" height="720" key="DiffContextDialog/0.23.1440.825@0.23.1440.825" timestamp="1579607014056" />
+    <state x="523" y="168" key="RollbackChangesDialog" timestamp="1579439084325">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="523" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1579439084325" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1579420597802">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579420597802" />
-    <state x="398" y="207" width="643" height="486" key="find.popup" timestamp="1579435638729">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2205" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579505912572">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="398" y="207" width="643" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579435638729" />
+    <state x="2205" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1579505912572" />
+    <state x="1971" y="248" width="858" height="584" key="find.popup" timestamp="1579612998268">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1971" y="248" width="858" height="584" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1579612998268" />
+    <state x="398" y="207" width="643" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579522486079" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579421764769">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

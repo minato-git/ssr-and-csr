@@ -3,7 +3,7 @@
   font-family: 'Avenir Light', Helvetica, Arial, sans-serif;
   background-color: #f6f6ef;
   position: relative;
-  bottom: 32px;
+  margin-bottom: 40px;
 }
 
 /*.home::after {*/

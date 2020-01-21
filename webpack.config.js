@@ -1,7 +1,7 @@
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
 
 const browserConfig = {
   entry: './src/browser/index.js',
@@ -52,8 +52,19 @@ const browserConfig = {
       // Options similar to the same options in webpackOptions.output
       // both options are optional
       filename: 'public/css/[name].css'
+    }),
+    new webpack.ProvidePlugin({
+      React: 'react'
     })
-  ]
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({
+        test: /\.js(\?.*)?$/i
+      })
+    ]
+  }
 };
 
 const serverConfig = {
@@ -93,7 +104,7 @@ const serverConfig = {
         query: { presets: ['react-app'] }
       }
     ]
-  },
+  }
 };
 
 module.exports = [browserConfig, serverConfig];
