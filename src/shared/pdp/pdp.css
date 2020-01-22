@@ -1,4 +1,9 @@
 .pdp {
     position: relative;
-    top: 32px;
+    top: 60px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }

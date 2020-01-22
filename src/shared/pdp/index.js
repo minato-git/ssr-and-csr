@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './pdp.css';
 import Description from '../components/description/description';
+import Header from './../components/header/Header';
+import Footer from './../components/footer/Footer';
 
 class PDP extends Component {
   constructor(props) {
@@ -33,11 +35,18 @@ class PDP extends Component {
 
   render() {
     let pdpData;
-    console.log('pdp state', this.state);
+    console.log('pdp state', this.state, this.props);
     if (this.state.initialData) {
       pdpData = this.state.initialData.pdpData;
     }
-    return <div className={'pdp'}>{pdpData && <Description info={pdpData} />}</div>;
+    return (
+      <div className={'flex-container'}>
+        <Header {...this.props} />
+        <div className={'pdp'}>{pdpData && <Description info={pdpData} />}</div>
+        <Footer />
+      </div>
+    );
+     
   }
 }
 

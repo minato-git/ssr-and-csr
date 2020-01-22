@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Carousel } from '../components/carousel';
 import { ProdList } from '../components/prodList';
 import './index.css';
+import Header from './../components/header/Header';
+import Footer from './../components/footer/Footer';
 
 class Home extends Component {
   constructor(props) {
@@ -21,12 +23,20 @@ class Home extends Component {
 
   componentDidMount() {
     if (!this.state.initialData) {
-      Promise.all(
-        fetch('https://node-sample-api.herokuapp.com/api/home').then((data) => data.json()),
-        fetch('https://node-sample-api.herokuapp.com/api/products?page=1').then((data) => data.json())
-      ).then(([carouselData, productData]) => {
-        this.setState({initialData: {carouselData, productData}});
-      });
+      Promise.all([
+        fetch('https://node-sample-api.herokuapp.com/api/home'),
+        fetch('https://node-sample-api.herokuapp.com/api/products?page=1')
+      ])
+        .then(([carouselDataStream, productDataStream]) => {
+          return new Promise(resolve => {
+            Promise.all([carouselDataStream.json(), productDataStream.json()]).then(data => {
+              resolve(data);
+            });
+          });
+        })
+        .then(([carouselData, productData]) => {
+          this.setState({ initialData: { carouselData, productData } });
+        });
     }
   }
 
@@ -48,7 +58,7 @@ class Home extends Component {
   };
 
   render() {
-    console.log('home state', this.state);
+    console.log('home state', this.state, this.props);
 
     let carouselData, productData;
     if (this.state.initialData) {
@@ -56,9 +66,13 @@ class Home extends Component {
       productData = this.state.initialData.productData.data;
     }
     return (
-      <div className="home">
-        {carouselData && <Carousel imgs={carouselData.carousel} />}
-        {productData && <ProdList products={productData} onLoadMore={this.onLoadMore} />}
+      <div className={'flex-container'}>
+        <Header {...this.props} />
+        <div className="home">
+          {carouselData && <Carousel imgs={carouselData.carousel} />}
+          {productData && <ProdList products={productData} onLoadMore={this.onLoadMore} />}
+        </div>
+        <Footer />
       </div>
     );
   }
