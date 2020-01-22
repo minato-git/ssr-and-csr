@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start-dev": "NODE_ENV=development webpack --mode=development -w & NODE_ENV=development nodemon server.js",
-    "start-prod": "NODE_ENV=production webpack --mode=production -p & NODE_ENV=production nodemon server.js"
+    "start-prod": "NODE_ENV=production webpack --mode=production -p && NODE_ENV=production nodemon server.js"
   },
   "keywords": [],
   "author": "",

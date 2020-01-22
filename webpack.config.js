@@ -56,8 +56,8 @@ const browserConfig = {
     }),
     new webpack.ProvidePlugin({
       React: 'react'
-    }),
-    new BundleAnalyzerPlugin()
+    })
+    // new BundleAnalyzerPlugin()
   ],
   optimization: {
     minimize: true,
