@@ -22,20 +22,19 @@ export const httpGetRequest = url => {
   });
 };
 
-
-export const getPdpData = (id) => {
+export const getPdpData = id => {
   return new Promise((resolve, reject) => {
     httpGetRequest(`https://node-sample-api.herokuapp.com/api/products/${id}`)
       .then(res => {
-        resolve({pdpData: res});
+        resolve({ pdpData: res });
       })
       .catch(err => {
         reject(err);
       });
   });
-}
+};
 
-export const getHomeData = () =>{
+export const getHomeData = () => {
   return new Promise((resolve, reject) => {
     Promise.all([
       httpGetRequest('https://node-sample-api.herokuapp.com/api/home'),
@@ -48,4 +47,4 @@ export const getHomeData = () =>{
         reject(err);
       });
   });
-}
+};

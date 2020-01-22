@@ -58,8 +58,6 @@ class Home extends Component {
   };
 
   render() {
-    console.log('home state', this.state, this.props);
-
     let carouselData, productData;
     if (this.state.initialData) {
       carouselData = this.state.initialData.carouselData;

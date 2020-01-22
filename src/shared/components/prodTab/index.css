@@ -1,11 +1,11 @@
-.prod-tab{
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    width: 20%;
-    box-sizing: border-box;
-    flex-shrink: 0;
+.prod-tab {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 20%;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
-.prod-tab img{
-    margin-right: auto;
+.prod-tab img {
+  margin-right: auto;
 }

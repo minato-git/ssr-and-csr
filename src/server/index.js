@@ -7,7 +7,7 @@ import routes from '../shared/routes';
 import App from '../shared/App';
 import compression from 'compression';
 import serialize from 'serialize-javascript';
-import {getHomeData, getPdpData} from './../utils/utils';
+import { getHomeData, getPdpData } from './../utils/utils';
 
 const app = express();
 
@@ -50,21 +50,25 @@ const getMarkup = (url, context) => {
 };
 
 app.get('/', (req, res, next) => {
-  getHomeData().then((initialData) => {
-    const context = { initialData };
-    const markup = getMarkup(req.url, context);
-    res.send(getTemplate(markup, initialData));
-  }).catch(next);
+  getHomeData()
+    .then(initialData => {
+      const context = { initialData };
+      const markup = getMarkup(req.url, context);
+      res.send(getTemplate(markup, initialData));
+    })
+    .catch(next);
 });
 
 app.get('/pdp/:id', (req, res, next) => {
-  getPdpData(req.params.id).then((initialData) => {
-    const context = { initialData };
-    const markup = getMarkup(req.url, context);
-    res.send(getTemplate(markup, initialData));
-  }).catch(next);
+  getPdpData(req.params.id)
+    .then(initialData => {
+      const context = { initialData };
+      const markup = getMarkup(req.url, context);
+      res.send(getTemplate(markup, initialData));
+    })
+    .catch(next);
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log('Server is listening');
+  console.log('Server is listening on port 3000');
 });

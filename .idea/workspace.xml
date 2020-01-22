@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="" />
+    <list default="true" id="33dc88ff-ef23-41a4-9ecb-f491d9ac2c66" name="Default Changelist" comment="added the readme to the project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/carousel/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/carousel/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/description/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/description/description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/prodList/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/prodList/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/prodTab/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/prodTab/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/ratingStar/ratingStar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/ratingStar/ratingStar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/pdp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/pdp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/pdp/pdp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/pdp/pdp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +94,7 @@
       <workItem from="1579420733571" duration="7897000" />
       <workItem from="1579435611072" duration="29092000" />
       <workItem from="1579694096718" duration="33000" />
+      <workItem from="1579711846652" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the config for the app">
       <created>1579523912387</created>
@@ -83,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579523912387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added the readme to the project">
+      <created>1579712837513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579712837513</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,17 +119,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fixed the config for the app" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the config for the app" />
+    <MESSAGE value="added the readme to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the readme to the project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579438887906">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1579438887906" />
-    <state x="329" y="52" key="CommitChangelistDialog2" timestamp="1579523912004">
+    <state x="329" y="52" key="CommitChangelistDialog2" timestamp="1579712874345">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="329" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579523912004" />
+    <state x="329" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579712874345" />
     <state x="144" y="79" width="1152" height="720" key="DiffContextDialog" timestamp="1579607014056">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -121,11 +149,11 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2205" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1579505912572" />
-    <state x="1971" y="248" width="858" height="584" key="find.popup" timestamp="1579612998268">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="398" y="207" width="643" height="486" key="find.popup" timestamp="1579712973079">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="1971" y="248" width="858" height="584" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1579612998268" />
-    <state x="398" y="207" width="643" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579522486079" />
+    <state x="398" y="207" width="643" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579712973079" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579421764769">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

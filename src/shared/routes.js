@@ -1,14 +1,14 @@
-import Home from "./home";
-import PDP from "./pdp";
+import Home from './home';
+import PDP from './pdp';
 
 const routes = [
   {
-    path: "/",
+    path: '/',
     exact: true,
     component: Home
   },
   {
-    path: "/pdp/:id?",
+    path: '/pdp/:id?',
     component: PDP
   }
 ];

@@ -35,7 +35,6 @@ class PDP extends Component {
 
   render() {
     let pdpData;
-    console.log('pdp state', this.state, this.props);
     if (this.state.initialData) {
       pdpData = this.state.initialData.pdpData;
     }
@@ -46,7 +45,6 @@ class PDP extends Component {
         <Footer />
       </div>
     );
-     
   }
 }
 

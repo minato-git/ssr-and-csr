@@ -1,9 +1,8 @@
 import React from 'react';
 import './Header.css';
 import backImage from './back.png';
-import {Link} from 'react-router-dom';
-const Header = (props) => {
-  console.log('header props',props);
+import { Link } from 'react-router-dom';
+const Header = props => {
   const showGoToHome = props.match && props.match.path.includes('/pdp/') && props.match.params.id;
   return (
     <div className={'header'}>
@@ -12,7 +11,7 @@ const Header = (props) => {
           <img src={backImage} />
         </Link>
       )}
-      <header >Tokopedia</header>
+      <header>Tokopedia</header>
     </div>
   );
 };
