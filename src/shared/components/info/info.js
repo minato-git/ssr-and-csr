@@ -1,5 +1,6 @@
 import React from 'react';
 import './info.css';
+import RatingStar from './../ratingStar/ratingStar';
 
 const Info = ({ info }) => {
   return (
@@ -10,7 +11,9 @@ const Info = ({ info }) => {
       </div>
       <div className={'key-data'}>
         <label className={'tag-name'}>Rating</label>
-        <span className={'tag-info'}>{info.rating}</span>
+        <span className={'tag-info'}>
+          <RatingStar rating={info.rating} />
+        </span>
       </div>
       <div className={'key-data'}>
         <label className={'tag-name'}>Price</label>

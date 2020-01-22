@@ -6,13 +6,13 @@ const Header = (props) => {
   console.log('header props',props);
   const showGoToHome = props.match && props.match.path.includes('/pdp/') && props.match.params.id;
   return (
-    <div>
+    <div className={'header'}>
       {showGoToHome && (
         <Link to={'/'}>
           <img src={backImage} />
         </Link>
       )}
-      <header className={'header'}>Tokopedia</header>
+      <header >Tokopedia</header>
     </div>
   );
 };

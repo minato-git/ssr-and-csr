@@ -1,21 +1,18 @@
-// import React from 'react';
-//
-// const RatingStar = ({rating}) => {
-//     const remainig = 5 - rating;
-//
-//     const stars = () => {
-//         let html = [];
-//         for(let i = 0; i< count; i++) {
-//             <div id={'star'}>
-//
-//             </div>
-//         }
-//     }
-//
-//     return
-//     (
-//
-//     )
-// };
-//
-// export default RatingStar;
+import React from 'react';
+import './rating.css';
+
+const RatingStar = ({ rating }) => {
+  console.log(rating);
+
+  const renderStars = count => {
+    let stars = [];
+    for (let i = 0; i < count; i++) {
+      stars.push(<span key={i} className="star"></span>);
+    }
+    return stars;
+  };
+
+  return <>{renderStars(rating)}</>;
+};
+
+export default RatingStar;
